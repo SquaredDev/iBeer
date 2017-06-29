@@ -29,7 +29,8 @@ img{
 }
 .wrapper{
     width: 1000px;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
 
     /*
         TODO:
@@ -39,6 +40,7 @@ img{
     */
 }
 #site-header{
+    flex-wrap: wrap;
     /*
         TODO
         - Flexbox property here
