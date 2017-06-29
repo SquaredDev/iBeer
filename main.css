@@ -36,23 +36,13 @@ img{
 
 }
 #site-header{
-  background-image: url("./img/header-img.jpg");
-    /*
-        TODO
-        - Flexbox property here
-    */
+
 }
 #site-header div{
     text-align: center;
     padding: 60px 0 120px 0;
     font-size: 4em;
-
-    /*
-        TODO:
-        - Add a background image "header-img.jpg"
-        make sure that the path to the image is correct
-    */
-
+    background-image: url("./img/header-img.jpg");
     background-size: cover;
     background-position: right bottom;
 }
@@ -70,20 +60,11 @@ img{
     bottom: 20px;
     text-shadow: 0 5px 8px rgba( 0, 0, 0, 0.3 );
     font-family: "Dancing Script", fantasy;
-    /*
-        TODO:
-        - Use the script font: 'Dancing Script' fot this text
-    */
 }
 #main-navigation{
     background: #444;
     display: flex;
     flex-direction: row;
-
-    /*
-        TODO:
-        - Use Flexbox to arrange the navigation links
-    */
 }
 #main-navigation a{
     display: block;
@@ -91,11 +72,6 @@ img{
     text-decoration: none;
     text-transform: uppercase;
     padding: 10px 20px;
-
-    /*
-        TODO:
-        - Flexbox - Create general spacing between nav links
-    */
 }
 #main-navigation #logo{
     margin-right: 400px;
@@ -122,6 +98,9 @@ aside{
     padding: 20px;
     background-color: #eee;
     box-shadow: 5px 5px 8px rgba( 0, 0, 0, 0.3 );
+    display: flex;
+    flex-flow: column;
+    width: 250px;
     /*
         TODO:
         - Flexbox: Set the starting width of this element
@@ -136,10 +115,11 @@ aside h3{
 }
 aside img{
     border-radius: 50%;
+    margin: auto;
     margin-bottom: 30px;
     border: 2px solid white;
     width: 200px;
-    height: auto;
+    height: 200px;
 }
 article{
     background-color: white;
@@ -175,12 +155,16 @@ article img{
         and match sizes and spacing to the mockup
     */
 }
-article footer p{
-    /*
-        TODO:
-        - Style the article footer
-        HINT: Look to the article header;
-    */
+article footer {
+  text-transform: uppercase;
+  color: grey;
+  border-top: 1px solid grey;
+  font-size: .75em;
+  text-align: center;
+  line-height: 3em;
+
+
+
 }
 #site-footer{
 
@@ -188,8 +172,5 @@ article footer p{
     color: white;
     text-align: center;
     line-height: 50px;
-    /*
-        TODO:
-        - Style the site footer
-    */
+    margin-top: 50px;
 }
