@@ -29,18 +29,12 @@ img{
 }
 .wrapper{
     width: 1000px;
+    margin: auto;
     display: flex;
     flex-direction: column;
 
-    /*
-        TODO:
-        - Center up the page
-        - Create a flexbox containerer for
-        the major page sections
-    */
 }
 #site-header{
-    flex-wrap: wrap;
     /*
         TODO
         - Flexbox property here
@@ -143,6 +137,8 @@ article{
     box-shadow: -5px 5px 8px rgba( 0, 0, 0, 0.3 );
     padding: 20px;
     margin-bottom: 20px;
+    float: left;
+    width: 600px;
 }
 article h2{
     line-height: 1em;
@@ -161,6 +157,9 @@ article time{
     color: #666;
 }
 article img{
+    float: right;
+    width: 250px;
+    height: auto;
     /*
         TODO:
         - Float article images to the right
