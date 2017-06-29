@@ -32,9 +32,11 @@ img{
     margin: auto;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 
 }
 #site-header{
+  background-image: url("./img/header-img.jpg");
     /*
         TODO
         - Flexbox property here
@@ -67,6 +69,7 @@ img{
     color: white;
     bottom: 20px;
     text-shadow: 0 5px 8px rgba( 0, 0, 0, 0.3 );
+    font-family: "Dancing Script", fantasy;
     /*
         TODO:
         - Use the script font: 'Dancing Script' fot this text
@@ -74,6 +77,8 @@ img{
 }
 #main-navigation{
     background: #444;
+    display: flex;
+    flex-direction: row;
 
     /*
         TODO:
@@ -105,6 +110,8 @@ main{
     padding: 20px;
     background-color: #444;
     box-shadow: -5px 5px 8px rgba( 0, 0, 0, 0.3 );
+    display: flex;
+    flex-direction: column;
     /*
         TODO:
         - Flexbox: Set the starting width of this element
@@ -131,6 +138,8 @@ aside img{
     border-radius: 50%;
     margin-bottom: 30px;
     border: 2px solid white;
+    width: 200px;
+    height: auto;
 }
 article{
     background-color: white;
