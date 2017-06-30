@@ -32,10 +32,12 @@ img{
     margin: auto;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: flex-start;
 
 }
 #site-header{
+  width: 1000px;
 
 }
 #site-header div{
@@ -75,20 +77,16 @@ img{
 }
 #main-navigation #logo{
     margin-right: 400px;
-
-    /*
-        TODO:
-        - Flexbox - The logo needs to take up more space
-        that the other links
-    */
 }
 main{
+    margin-top: -50px;
     padding: 20px;
     background-color: #444;
     box-shadow: -5px 5px 8px rgba( 0, 0, 0, 0.3 );
     width: 650px;
-    display: flex;
-    flex-direction: column;
+    position: relative;
+    align-items: center;
+
     /*
         TODO:
         - Flexbox: Set the starting width of this element
@@ -96,12 +94,13 @@ main{
     */
 }
 aside{
+    margin-top: -50px;
     padding: 20px;
     background-color: #eee;
     box-shadow: 5px 5px 8px rgba( 0, 0, 0, 0.3 );
-    display: flex;
-    flex-flow: column;
+    align-items: center;
     width: 250px;
+
     /*
         TODO:
         - Flexbox: Set the starting width of this element
@@ -113,6 +112,7 @@ aside h3{
     margin: 0 0 10px 0;
     padding: 0 0 10px 0;
     border-bottom: 1px solid #ccc;
+    align-items: flex-start;
 }
 aside img{
     border-radius: 50%;
@@ -121,6 +121,7 @@ aside img{
     border: 2px solid white;
     width: 200px;
     height: 200px;
+    align-self: flex-start;
 }
 article{
     background-color: white;
